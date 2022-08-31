@@ -51,7 +51,7 @@ class SeatsView : View {
 
         val halfOfHeight = height / 2
         val halfOfWidth = width / 2
-        var value = -600F
+        var value = -500F
 
         for (i in 0..7) {
             if (i.mod(2) == 0) {
@@ -87,12 +87,12 @@ class SeatsView : View {
         // Mengatur Warna ketika Sudah Dibooking
         if (seat.isBooked) {
             backgroundPaint.color = ResourcesCompat.getColor(resources, R.color.grey_200, null)
-            armrestPaint.color = ResourcesCompat.getColor(resources, R.color.grey_200, null)
+            armrestPaint.color = ResourcesCompat.getColor(resources, R.color.blue_500, null)
             bottomSeatPaint.color = ResourcesCompat.getColor(resources, R.color.grey_200, null)
             numberSeatPaint.color = ResourcesCompat.getColor(resources, R.color.black, null)
         } else {
             backgroundPaint.color = ResourcesCompat.getColor(resources, R.color.blue_500, null)
-            armrestPaint.color = ResourcesCompat.getColor(resources, R.color.blue_700, null)
+            armrestPaint.color = ResourcesCompat.getColor(resources, R.color.grey_200, null)
             bottomSeatPaint.color = ResourcesCompat.getColor(resources, R.color.blue_200, null)
             numberSeatPaint.color = ResourcesCompat.getColor(resources, R.color.grey_200, null)
         }
